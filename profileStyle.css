@@ -30,6 +30,13 @@ header h1 {
     font-weight: 600;
 }
 
+header img {
+    border-radius: 50%;
+    border: 5px solid #667eea;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
 /* Navigation */
 nav {
     background-color: white;
@@ -39,7 +46,8 @@ nav {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-nav ol {
+nav ol,
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -87,6 +95,7 @@ nav li a:hover {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
 }
 
 .box-1:hover {
@@ -120,6 +129,71 @@ nav li a:hover {
     text-decoration: underline;
 }
 
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skills-grid h5 {
+    color: #764ba2;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.skills-grid p {
+    margin-bottom: 4px;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #f8f8fc;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 3px solid #764ba2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:last-child {
+    margin-bottom: 0;
+}
+
+.project-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h5 {
+    font-size: 1.15em;
+    margin-bottom: 6px;
+}
+
+.project-card h5 a {
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.project-card h5 a:hover {
+    color: #667eea;
+    text-decoration: underline;
+}
+
+.project-card p {
+    padding-left: 0;
+}
+
+/* Header intro text */
+header p {
+    color: #555;
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 15px auto 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
@@ -130,7 +204,8 @@ nav li a:hover {
         font-size: 2em;
     }
     
-    nav ol {
+    nav ol,
+    nav ul {
         flex-direction: column;
         gap: 10px;
     }

@@ -1,44 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <meta name="author" content="A. Trainer" />
-    <meta name="description" content="Emmett Birch, impressive, funny, humble" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emmett Birch - Software Developer</title>
+    <meta name="author" content="Emmett Birch" />
+    <meta name="description" content="Portfolio of Emmett Birch — software developer skilled in Java, Python, C, Spring Boot and web development." />
     <link href="profileStyle.css" rel="stylesheet" />
 </head>
- 
+
 <body>
- 
 
- 
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://www.linkedin.com/in/emmettbirch/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/QueenEM" target="_blank">GitHub</a></li>
+        </ul>
+    </nav>
+
     <header>
-        <a href="https://www.linkedin.com/in/emmettbirch/" target="_blank"><h1>Emmett Birch - LinkedIn</h1></a>
+        <img alt="Emmett Birch" src="images/profilepic.jpg" width="200">
+        <h1>Emmett Birch</h1>
+        <p>Software developer with hands-on experience in Java, Python and C. Trained through Sparta Global and Harvard's CS50x, with a focus on building clean, well-structured applications from back-end APIs to embedded audio systems.</p>
     </header>
-
-
-   
-    <section class="box-1">
-        <a href="https://www.linkedin.com/in/emmettbirch/" target="_blank"><img alt="MyPicture" src="images/profilepic.jpg" width="200px"></a>
-    </section>
 
     <section class="box-1">
         <h4>Projects</h4>
-        <p><a href="projects.html">Waveform display</a></p>
-
+        <div class="project-card">
+            <h5><a href="WaveformDisplay.html">Waveform Display</a></h5>
+            <p>CS50x final project. Reads a WAV audio file and renders a real-time waveform visualisation as it plays back, built using C and the SDL2 graphics library.</p>
+        </div>
+        <div class="project-card">
+            <h5><a href="GuitarPedal.html">Guitar Pedal</a></h5>
+            <p>CS50x final project. A digital guitar effects pedal built on a Raspberry Pi, processing real-time audio input to apply effects such as distortion, delay and modulation.</p>
+        </div>
     </section>
 
     <section class="box-1">
-        <h4>Languages</h4>
-        <p>Java</p>
-        <p>Python</p>
-        <p>C</p>
-        <p>html</p>
-        <p>css</p>
+        <h4>Certificates</h4>
+        <p><a href="images\CS50x.pdf" target="_blank">CS50x — Harvard University</a></p>
+        <p><a href="images\Sparta.pdf" target="_blank">Sparta Global</a></p>
     </section>
+
+    <section class="box-1">
+        <h4>Skills</h4>
+        <div class="skills-grid">
+            <div>
+                <h5>Languages</h5>
+                <p>Java</p>
+                <p>Python</p>
+                <p>C</p>
+                <p>HTML &amp; CSS</p>
+                <p>JavaScript</p>
+                <p>SQL</p>
+            </div>
+            <div>
+                <h5>Java Development</h5>
+                <p>OOP &amp; SOLID Principles</p>
+                <p>Generics &amp; Collections</p>
+                <p>Streams &amp; Lambdas</p>
+                <p>JUnit, Hamcrest &amp; Mockito</p>
+                <p>Design Patterns</p>
+                <p>JPA &amp; Hibernate</p>
+            </div>
+            <div>
+                <h5>API Development</h5>
+                <p>RESTful Services</p>
+                <p>Spring Boot &amp; Spring REST</p>
+                <p>HTTP Protocol</p>
+            </div>
+            <div>
+                <h5>SQL &amp; Databases</h5>
+                <p>Relational Data Modelling</p>
+                <p>Queries &amp; Joins</p>
+                <p>Stored Procedures &amp; Views</p>
+                <p>Constraints &amp; Keys</p>
+            </div>
+            <div>
+                <h5>Web Development</h5>
+                <p>HTML, CSS, JavaScript, Bootstrap</p>
+                <p>Thymeleaf Templating</p>
+                <p>Spring Web, MVC &amp; Security</p>
+            </div>
+            <div>
+                <h5>Engineering Core</h5>
+                <p>Git &amp; GitHub</p>
+                <p>CI/CD with GitHub Actions</p>
+                <p>Cloud Deployment</p>
+                <p>Markdown</p>
+            </div>
+        </div>
+    </section>
+
 <!--
     <section class="box-1">
         <h4>Technologies/Tools</h4>
@@ -66,85 +121,6 @@
         <p>Data Privacy & Ethical Considersations</p>
     </section>
 -->
-    <section class="box-1">
-        <h4>Java Development</h4>
-        <p>Control Flow</p>
-        <p>Classes & Methods</p>
-        <p>OOP & SOLID Principles</p>
-        <p>Generics and Collections</p>
-        <p>Refactoring</p>
-        <p>Unit Testing with Junit & Hamcrest</p>
-        <p>Mocking with Mockito</p>
-        <p>Java Libraries</p>
-        <p>Design Patterns & Code Smells</p>
-        <p>Streams, Lambdas and Functional Programming</p>
-        <p>JPA & Hibernate</p>
-        <p>GenAI IDE Tools</p>
-        <p>     - Autocomplete & Code Suggestions</p>
-        <p>     - Debugging & Explaining Code</p>
-        <p>     - Comments & Producing Documentation</p>
-        <p>     - AI-Guided Design & Refactoring</p>
-        <p>     - Converting Code to Other Languages</p>
-        <p>     - Test Case Generation & Mocking</p>
-    </section>
 
-    <section class="box-1">
-        <h4>API Development</h4>
-        <p>HTTP Protocol</p>
-        <p>RESTful Services</p>
-        <p>Structuring API Services</p>
-        <p>Spring Boot</p>
-        <p>Spring REST</p>
-        <p>AI-Generated Boilerplate</p>
-    </section>
-
-    <section class="box-1">
-        <h4>SQL</h4>
-        <p>Relational Databases</p>
-        <p>Data Modelling</p>
-        <p>Creating Tables & Inserting Data</p>
-        <p>Constraints & Keys</p>
-        <p>Queries & Joins</p>
-        <p>Aggregation</p>
-        <p>Stored Procedures</p>
-        <p>Views</p>
-    </section>
-
-    <section class="box-1">
-        <h4>Web Development</h4>
-        <p>HTML, CSS, JavaScript, Bootstrap</p>
-        <p>Thymeleaf Templating Syntax</p>
-        <p>Spring Web</p>
-        <p>Spring Security</p>
-        <p>Spring MVC</p>
-        <p>AI-Generated Boilerplate</p>
-    </section>
-
-    <section class="box-1">
-        <h4>Engineering Core</h4>
-        <p>Markdown</p>
-        <p>Git & GitHub</p>
-        <p>CI/CD Pipelines with GitHub Actions</p>
-        <p>Cloud Deployment</p>
-    </section>
-
-    <section class="box-1">
-        <h4>Agile & Scrum</h4>
-    </section>
-
-    <section class="box-1">
-        <h4>Certificates</h4>
-        <p><a href="images\CS50x.pdf" target="_blank">CS50x Harvard</a></p>
-        <p><a href="images\Sparta.pdf" target="_blank">Sparta Global</a></p>
-
-    
-        
-    </section>
-
-
-
-
-
- 
+</body>
 </html>
- 

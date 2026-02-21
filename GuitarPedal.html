@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Guitar Pedal - CS50x Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emmett Birch" />
+    <meta name="description" content="Guitar Pedal - CS50x final project by Emmett Birch" />
+    <link href="profileStyle.css" rel="stylesheet" />
+    <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .project-description {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://www.linkedin.com/in/emmettbirch/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/QueenEM" target="_blank">GitHub</a></li>
+        </ol>
+    </nav>
+
+    <section class="box-1">
+        <h4>Guitar Pedal</h4>
+        <p class="project-description">
+            My final project for Harvard's CS50x course. A digital guitar effects pedal built using a Raspberry Pi,
+            processing real-time audio input to apply effects such as distortion, delay and modulation.
+        </p>
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube.com/embed/wJjhRx7qGRw"
+                title="Guitar Pedal - CS50x Final Project"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+</body>
+</html>
