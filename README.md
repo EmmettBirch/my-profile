@@ -1,5 +1,7 @@
 # My Profile
 
+**Live Site:** [https://emmettbirch.github.io/my-profile/](https://emmettbirch.github.io/my-profile/)
+
 A personal portfolio website built with HTML and CSS. Showcases my projects, skills, and certificates.
 
 ## Pages
